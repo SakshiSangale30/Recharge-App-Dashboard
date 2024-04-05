@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8E1FB"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/cardshape"
+        >
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/menuline">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="218dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="25dp"
+            android:text="Easy Pay Recharge"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/notifybell">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/profileicon" />
+
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="90dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#00FFFFFF"
+                >
+                <LinearLayout
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/shapeforcard"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/vectorimageone"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:text="Your QR Code"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginEnd="30dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/payout"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="4">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="My Wallet Balance"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="0dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                >
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/wallet"
+                                    android:layout_marginTop="5dp"
+                                    android:rotationX="20"
+                                    android:rotationY="20">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Rs. 37.35"
+                                    android:gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold">
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="My AEPS Balance"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                >
+
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/wallet"
+                                    android:layout_marginTop="5dp"
+                                    android:rotationX="20"
+                                    android:rotationY="20">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Rs. 0.00"
+                                    android:textSize="14dp"
+                                    android:gravity="center"
+                                    android:layout_marginStart="20dp"
+                                    android:textStyle="bold">
+                                </TextView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapeforcard"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rechargesix">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Welcome to the Easy Pay Recharge mobile application."
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shapeforcard"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Transfer Money"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/requestfund">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/addmoney">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/transferfund">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/report">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Reuest Funds"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Add Money"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Transfer Funds"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Reports"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapeforcard"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="25dp"
+                        android:text="Recharge and Pay Bill"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/mobile">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/dth">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/electricity">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/cylinder">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Mobile"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="DTH"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Electricity"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Cylinder"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/landline"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/gas"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fastag"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/insurance"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="15dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Landline"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Gas"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Fastag"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Insurance"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/creditcardpayment"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/panmitrapancard"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            >
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/loanrepayment"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Credit Card Payment"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="1dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Panmitra Pancard"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Loan Repayment"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapeforcard"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="207dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Banking Services"
+                            android:textSize="20dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/microatm">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="52dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/dmtpayment">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Micro ATM"
+                            android:layout_marginStart="230dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="0dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="DMT Payment"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="230dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/aeps1">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/aeps2">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="57dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Aeps 1"
+                            android:layout_marginStart="230dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="0dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="57dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Aeps 2"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="0dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapeforcard">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/hotel"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="210dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/flightbooking"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="32dp">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="79dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="10dp"
+
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Hotel Booking"
+                            android:textSize="15dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="79dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Flight Booking"
+                            android:textSize="15dp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/pancardcreation"
+                            android:layout_marginStart="220dp"
+                            android:layout_marginTop="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/trainbooking"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="15dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="79dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="10dp"
+
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Pan Card Creation"
+                            android:textSize="15dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="79dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Train Booking"
+                            android:textSize="15dp"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapeforcard"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rechargefour">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/shapeforcard"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Earn with Affiliated Links"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/savingac"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/dematac"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/creditcard"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/investment"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="15dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Saving A/c"
+                            android:textStyle="bold"
+                            android:textSize="15dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Demat A/c"
+                            android:textStyle="bold"
+                            android:textSize="15dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Credit Card"
+                            android:textStyle="bold"
+                            android:textSize="15dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Investment"
+                            android:textStyle="bold"
+                            android:textSize="15dp">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/creditline"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="25dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/personalloan"
+                            android:layout_marginStart="25dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="Credit line"
+                            android:textStyle="bold"
+                            android:textSize="15dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="Personal Loan"
+                            android:textStyle="bold"
+                            android:textSize="15dp">
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</RelativeLayout>
